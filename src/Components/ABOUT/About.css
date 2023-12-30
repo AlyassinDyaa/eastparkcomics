@@ -1,0 +1,88 @@
+/* Importing font used in Hero page */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+.about_page {
+    font-family: 'Montserrat', sans-serif;
+    color: #fff; /* Match Hero page text color */
+    background: linear-gradient(135deg, #6e8efb, #a777e3); /* Hero page background */
+    padding: 40px 20px;
+   
+    
+}
+
+/* Existing styles remain unchanged */
+
+.section_content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Reversing the order for the first section */
+.introduction .section_content {
+    flex-direction: row-reverse;
+}
+
+.section_image {
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .section_content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .section_image {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
+
+
+
+.section {
+    margin-bottom: 60px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.4); /* Semi-transparent background */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.section h1, .section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.section p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.section-image {
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.values svg {
+    margin-bottom: 20px;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .section h1, .section h2 {
+        font-size: 2em;
+    }
+
+    .section p {
+        font-size: 1em;
+    }
+}

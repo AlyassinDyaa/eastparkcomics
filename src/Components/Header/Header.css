@@ -1,0 +1,165 @@
+/* Custom typography */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(135deg, #6e8efb, #a777e3);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: #fff;
+  text-align: center;
+  overflow: hidden;
+}
+
+
+
+/* Floating Circle Styles Unchanged */
+
+.hero-content {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  padding: 20px; /* Additional padding */
+}
+
+.hero-logo {
+  max-width: 50%; /* Adjust size as needed */
+  margin-bottom: 20px; /* Space below logo */
+}
+
+h1 {
+  font-size: 2.5em; /* Larger header font size */
+  margin-bottom: 0.5em; /* Space below header */
+}
+
+h2 {
+  font-size: 1.5em; /* Sub-header font size */
+  margin-bottom: 1em; /* Space below sub-header */
+}
+
+p {
+  font-size: 1em; /* Paragraph font size */
+  margin-bottom: 1.5em; /* Space below paragraph */
+}
+
+/* Enhanced button design */
+.hero-cta button {
+  background-color: transparent;
+  border: 2px solid #fff;
+  border-radius: 25px;
+  padding: 10px 25px;
+  font-weight: bold;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.hero-cta button:hover {
+  transform: scale(1.05);
+  background-color: #fff;
+  color: #6e8efb;
+}
+
+/* Responsive design for smaller devices */
+@media screen and (max-width: 768px) {
+  .hero-logo {
+      max-width: 120px; /* Smaller logo on mobile */
+  }
+
+  h1 {
+      font-size: 2em; /* Smaller font size for header */
+  }
+
+  h2 {
+      font-size: 1.2em; /* Smaller font size for sub-header */
+  }
+
+  p {
+      font-size: 0.9em; /* Smaller font size for paragraph */
+  }
+}
+
+
+.floating-circle {
+  position: absolute;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.15);
+  animation: floatAnimation 10s linear infinite;
+  opacity: 0.7;
+}
+
+.circle1 {
+  width: 500px;
+  height: 500px;
+  top: 10%;
+  left: -50px;
+  animation-duration: 6s;
+}
+
+.circle2 {
+  width: 300px;
+  height: 300px;
+  bottom: 10%;
+  right: -80px;
+  animation-duration: 6s;
+}
+
+.circle3 {
+  width: 200px;
+  height: 200px;
+  right: 10%;
+  top: -80px;
+  animation-duration: 6s;
+}
+
+@keyframes floatAnimation {
+  0% {
+      transform: translateY(0) rotate(0deg);
+      opacity: 0.7;
+  }
+  50% {
+      transform: translateY(-20px) rotate(180deg);
+      opacity: 0.85;
+  }
+  100% {
+      transform: translateY(0) rotate(360deg);
+      opacity: 0.7;
+  }
+}
+
+.hero-content {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.hero-cta button {
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #fff;
+  color: #6e8efb;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.hero-cta button:hover {
+  background-color: #6e8efb;
+  color: #fff;
+}
+
+/* Animated gradient background */
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.hero-section {
+  background: linear-gradient(135deg, #6e8efb, #a777e3, #6e8efb);
+  background-size: 200% 200%;
+  animation: gradientAnimation 15s ease infinite;
+}

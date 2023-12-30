@@ -1,0 +1,58 @@
+navigation {
+    background: rgba(0, 0, 0, 0.3);
+    width: max-content;
+    padding: 0.7rem 1.7rem;
+    z-index: 1000;
+    position: fixed;
+    right: 2rem; /* Align to the right */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Adjust for exact vertical center */
+    display: flex;
+    flex-direction: column; /* Stack icons vertically */
+    gap: 0.8rem;
+    border-radius: 3rem;
+    backdrop-filter: blur(15px);
+}
+
+navigation a {
+    background: transparent;
+    padding: 0.9rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-light);
+    font-size: 1.1rem;
+    text-decoration: none; /* Remove underline from links */
+    cursor: pointer; /* Indicates clickable items */
+}
+
+navigation a:hover {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+navigation a.active {
+    background: var(--color-bg);
+    color: var(--color-white);
+}
+
+/* Media query for mobile screens */
+/* Media query for mobile screens */
+@media screen and (max-width: 768px) {
+    navigation {
+        position: fixed;
+        bottom: 0;
+        left: 50%;
+        top: 90%;
+        transform: translateX(-50%);
+        flex-direction: row; /* Align horizontally */
+        width: max-content; /* Adjust width */
+        padding: 0.5rem; /* Reduce padding */
+        z-index: 1000;
+    }
+
+    navigation a {
+        padding: 0.5rem; /* Reduce padding in icons */
+        font-size: 0.9rem; /* Adjust font size for mobile */
+    }
+}
