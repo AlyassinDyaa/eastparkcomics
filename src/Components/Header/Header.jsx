@@ -15,7 +15,7 @@ const Header = () => {
               <h2>Tales to Inspire</h2>
               <p>Your informative paragraph that complements the heading and subheading.</p>
               <div class="hero-cta">
-                  <button>Learn More</button>
+                  <button>Apply Internship</button>
                   <button>Contact Us</button>
               </div>
           </div>
