@@ -25,6 +25,13 @@
   padding: 20px; /* Additional padding */
 }
 
+/* Site navigation styles */
+.header-navigation {
+  width: 100%;
+  height: 5%;
+  font-size:2.5em;
+}
+
 .hero-logo {
   max-width: 50%; /* Adjust size as needed */
   margin-bottom: 20px; /* Space below logo */
@@ -66,7 +73,7 @@ p {
 /* Responsive design for smaller devices */
 @media screen and (max-width: 768px) {
   .hero-logo {
-      max-width: 120px; /* Smaller logo on mobile */
+      max-width: 100%; /* Smaller logo on mobile */
   }
 
   h1 {
@@ -137,7 +144,7 @@ p {
   z-index: 10;
 }
 
-.hero-cta button {
+/*.hero-cta button {
   margin: 10px;
   padding: 10px 20px;
   background-color: #fff;
@@ -151,7 +158,7 @@ p {
   background-color: #6e8efb;
   color: #fff;
 }
-
+*/
 /* Animated gradient background */
 @keyframes gradientAnimation {
   0% { background-position: 0% 50%; }

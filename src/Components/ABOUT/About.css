@@ -36,6 +36,8 @@
     .section_content {
         flex-direction: column;
         text-align: center;
+        justify-content: center;
+        flex-wrap: wrap;
     }
 
     .section_image {
@@ -60,8 +62,8 @@
     align-items: center;
     justify-content: center;
     display: flex;
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+    /*padding-top: 4rem;
+    padding-bottom: 4rem;*/
     color: white;
     text-shadow: 1px 1px 2px black;
 }
